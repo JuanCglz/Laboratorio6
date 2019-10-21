@@ -5,9 +5,9 @@ const app = express()
 
 const port = process.env.PORT || 3000
 
-app.get('/', function(req, res) {
+app.get('', function(req, res) {
   res.send({
-    greeting: 'Hola Mundo!'
+    greeting: 'Laboratorio 6 - JCGA'
   })
 })
 
@@ -38,7 +38,7 @@ app.get('/weather', function(req, res) {
 
 app.get('*', function(req, res) {
   res.send({
-    error: 'Ruta no valida, chiquitin'
+    error: 'Ruta no valida :('
   })
 })
 
